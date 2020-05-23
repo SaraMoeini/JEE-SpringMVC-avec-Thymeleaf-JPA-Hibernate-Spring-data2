@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorator="template1">
+
+<head>
+<meta charset="UTF-8">
+<title>access denied</title>
+</head>
+<body>
+<div th:replace="layout :: header"></div>
+
+<div layout:fragment="content">
+ <div class="spacer col-md-6 col-xs-12">
+ <p></p>
+  <div class="panel panel-default">
+   <div class="panel-hedding">Edit d'un produit</div>
+   <div class="panel-body">
+	<h3 class="red"> Vous n'etes pas autorise a acceder a cette ressource</h3>
+   </div>
+   </div>
+  </div>
+ </div>  
+</body>
+</html>
